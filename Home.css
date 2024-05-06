@@ -1,0 +1,20 @@
+div.text {
+    margin: 250px 500px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1PX solid #ccc;
+}
+input[type="text"] {
+    width: 550px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto; /* Centering the input field */
+}
+nav a {
+    margin-left: 10px; /* Adding space between the images */
+}

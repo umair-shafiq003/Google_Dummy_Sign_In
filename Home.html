@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:/Users/admin/Downloads/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="Home.css">
+    <title>Google Account</title>
+</head>
+<body>
+    <nav>
+        <img src="Screenshot 2024-05-02 221557.png" alt="">
+        <input type="text" placeholder="Search Google Account">
+        <div>
+            <a href="#"><img id="1" src="question.png" alt="?" width="22" height="26"></a>
+            <a href="#"><img id="2" src="grid.png" alt="grid" width="22" height="26"></a>
+        </div>
+    </nav>
+    <div class="text">
+        <h1>HAHAHAHAHHAHAHA, YOU'VE BEEN SERVED</h1>
+        <h1>userEmail:</h1>
+        <p id="displayData1">email<!-- #region --></p>
+        <h1>userPass:</h1>
+        <p id="displayData2">password<!-- #region --></p>
+    </div>
+    <script>
+        // Retrieve the saved email from localStorage
+        var savedEmail = localStorage.getItem('userEmail');
+        // Display the saved email in the div
+        document.getElementById('displayData1').innerText = savedEmail;
+        // Retrieve the saved email from localStorage
+        var savedPass = localStorage.getItem('userPass');
+        // Display the saved email in the div
+        document.getElementById('displayData2').innerText = savedPass;
+
+    </script>
+</body>
+</html>

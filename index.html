@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Account</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="horizontal-container">
+        <div class="horizontal-item1">
+            <img src="logo.jpg" alt="Google" width="48" height="48">
+            <p class ='Heading1'>Sign in</p>
+            <p class ='Heading2'> Use your Google Account</p>
+        </div>
+        <div class="horizontal-item2">
+            <input class="email" type="email" name="email" id="email" placeholder="Email or phone">
+            <a href="@" id ="Forgot">
+                <p id= "Guest">Forgot email?</p>
+            </a><br>
+            <p>Not your computer? Use Guest mode to sign in privately.</p>
+            <a href="@" id ="Forgot">
+                <p id= "Guest">Learn more about using Guest mode</p>
+            </a><br>
+            <a href="@">
+                <input class="button" type="button" id="Create" value="Create account">
+            </a>
+            <a href="pass.html">
+            <input class="button" type="button" id="Next" value="Next" onclick="saveEmail()">
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="lang">
+            <select class="language" id="language">
+                <option value="English">English (United Kingdom)</option>
+            </select>
+        </div>
+        <div class="footer-link">
+            <ul>
+                <li><a href="@">Help</a></li>
+                <li><a href="@">Privacy</a></li>
+                <li><a href="@">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        
+        function saveEmail() {
+            // Get the email input value
+            var email = document.getElementById('email').value;
+            
+            // Store the email in localStorage
+            localStorage.setItem('userEmail', email);
+        }
+    </script>
+</body>
+</html>
